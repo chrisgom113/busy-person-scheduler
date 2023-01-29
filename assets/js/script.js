@@ -1,13 +1,61 @@
-var currentDay = $("#currentDay");
-
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-$(function () {
+
+var current = $("#currentDay");
+
+// var nineSlot = $('9').text();
+// var tenSlot = $('#hour-10').children([0]).text();
+// var elevenSlot = $('#hour-11').children([0]).text();
+// var twelveSlot = $('#hour-12').children([0]).text();
+// var oneSlot = $('#hour-1').children([0]).text();
+// var twoSlot = $('#hour-2').children([0]).text();
+// var threeSlot = $('#hour-3').children([0]).text();
+// var fourSlot = $('#hour-4').children([0]).text();
+// var fiveSlot = $('#hour-5').children([0]).text();
+
+
+// var businessHours = [nineSlot, tenSlot, elevenSlot, oneSlot, twoSlot, threeSlot, fourSlot, fiveSlot];
+
+
+
+// var nineAm = dayjs('09:00').format('hA');
+// console.log(nineAm);
+
+
+
+function displayCurrent () {
+    var now = dayjs().format('ddd, MMM DD, hh:mm a')
+    current.text(now);
+    nowTime = dayjs().format('H');
+
+    $('.time-block').each(function() {
+        var theHour = $(this).attr('id').split("-")[1];
+    
+        if (nowTime < theHour) {
+            $(this).addClass('future');
+
+
+        } else if (nowTime == theHour) {
+            $(this).addClass('present');
+
+
+        } else if (nowTime > theHour) {
+            $(this).addClass('past');
+        }
+    })
+ 
+}
+
+      
 
     
+
+    
+    
+
     // TODO: Add a listener for click events on the save button. This code should
     // use the id in the containing time-block as a key to save the user input in
     // local storage. HINT: What does `this` reference in the click listener
@@ -27,13 +75,9 @@ $(function () {
     //
 
 
-function displayCurrentDay () {
-    var today = dayjs().format('ddd, MMM DD, hh:mm a')
-    currentDay.text(today);
-    
-}
-displayCurrentDay();
 
-    // TODO: Add code to display the current date in the header of the page.
-  });
+
+displayCurrent();
+$(function () {
+});
   
