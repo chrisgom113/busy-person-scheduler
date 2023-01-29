@@ -60,9 +60,18 @@ body {
 
   .hide {
     display: none;
+
   }
+
+  .white-font-placeholder::-webkit-input-placeholder {
+        color: #f6f7f9;
+
+    }
+  
   
 
   #reset-container {
     margin: 15px 0;
   }
+
+  
