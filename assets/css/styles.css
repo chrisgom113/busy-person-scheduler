@@ -64,8 +64,8 @@ body {
   }
 
   .white-font-placeholder::-webkit-input-placeholder {
-        color: #f6f7f9;
-
+        color: #f0e9e9;
+        text-align: center;
     }
   
   

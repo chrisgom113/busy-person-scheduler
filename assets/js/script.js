@@ -20,14 +20,14 @@ $(function () {
 
             } else if (nowTime == theHour) {
                 $(this).addClass('present');
-                $(this).children(".description").attr('placeholder','Current Hour');
-                $(this).children('.description').addClass('white-font-placeholder');
+                // $(this).children(".description").attr('placeholder','Now!');
+                // $(this).children('.description').addClass('white-font-placeholder');
 
 
 
             } else if (nowTime > theHour) {
                 $(this).addClass('past');
-                $(this).children(".description").attr('placeholder','passed').css('font-style', 'italic');
+                $(this).children(".description").attr('placeholder','passed...but you can still save events!').css('font-style', 'italic');
 
             }
         })
@@ -45,6 +45,7 @@ $(function () {
         localStorage.setItem(hour, inputReminder);
         $('#confirm-save').removeClass('hide');
         $('#confirm-save').addClass('alert alert-success');
+        $('#confirm-reset').addClass('hide');
 
     })
 
@@ -68,6 +69,9 @@ $(function () {
         event.preventDefault;
         $('textArea').val('');
         localStorage.clear();
+        $('#confirm-save').addClass('hide');
+        $('#confirm-reset').removeClass('hide');
+        $('#confirm-reset').addClass('alert alert-success');
     })
 
 
