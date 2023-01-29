@@ -24,6 +24,7 @@ $(function () {
 
             } else if (nowTime > theHour) {
                 $(this).addClass('past');
+                
 
             }
         })
@@ -41,6 +42,7 @@ $(function () {
         localStorage.setItem(hour, inputReminder);
         $('#confirm-save').removeClass('hide');
         $('#confirm-save').addClass('alert alert-success');
+        
     })
 
 
@@ -54,6 +56,8 @@ $('#hour-14 .description').val(localStorage.getItem('14'));
 $('#hour-15 .description').val(localStorage.getItem('15'));
 $('#hour-16 .description').val(localStorage.getItem('16'));
 $('#hour-17 .description').val(localStorage.getItem('17'));
+
+
 
 
 
