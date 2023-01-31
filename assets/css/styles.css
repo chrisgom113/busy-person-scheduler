@@ -36,7 +36,7 @@ body {
   }
   
   .present {
-    background-color: #ff6961;
+    background-color: #f8d7da;
     color: white;
   }
   
@@ -64,8 +64,8 @@ body {
   }
 
   .white-font-placeholder::-webkit-input-placeholder {
-        color: #f0e9e9;
-        text-align: center;
+        color: #ba6d6d;
+        
     }
   
   

@@ -20,8 +20,8 @@ $(function () {
 
             } else if (nowTime == theHour) {
                 $(this).addClass('present');
-                // $(this).children(".description").attr('placeholder','Now!');
-                // $(this).children('.description').addClass('white-font-placeholder');
+                $(this).children(".description").attr('placeholder','Now!');
+                $(this).children('.description').addClass('white-font-placeholder');
 
 
 
