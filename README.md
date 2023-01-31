@@ -46,6 +46,15 @@ None required. Live URL
 
 The following animation demonstrates the application functionality:
 
+Save Event
+![](./assets/images/save_event.gif)
+
+Clear Event(s)
+![](./assets/images/events_cleared.gif)
+
+Empty Input Alert
+![](./assets/images/empty_input_alert.gif)
+
 ## Credits
 
 ## License
