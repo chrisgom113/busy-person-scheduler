@@ -44,7 +44,23 @@ None required. Live URL
 
 ## Usage
 
-The following animation demonstrates the application functionality:
+User can access the app using this url:
+
+
+
+Once on the page, user will see hour blocks for regular business hours as well as the current date and time displayed on the top of the page. 
+
+User can begin typing in any hour block. Input placeholder text will show '...current hour' for the hour block that corresponds to the current time.
+
+Once entry is complete, user can click the blue icon to the right of each block to save the entry. When page is refreshed, the saved entry will persist on the page. 
+
+If user tries to click the 'save' icon when no event has been entered, a window alert will appear advising user to enter event before saving.
+
+If user wishes, they may scroll to the bottom of the page and click the 'reset' button to clear all inputs.
+
+Save and Reset functions both use browser 'local.storage' functionality. This can be checked in the 'application' type of the devtools.
+
+The following animation help demonstrate the application functionality:
 
 Save Event
 ![](./assets/images/save_event.gif)
