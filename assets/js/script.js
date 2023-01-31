@@ -20,7 +20,7 @@ $(function () {
 
             } else if (nowTime == theHour) {
                 $(this).addClass('present');
-                $(this).children(".description").attr('placeholder','...Current hour');
+                $(this).children(".description").attr('placeholder', '...Current hour');
                 $(this).children('.description').addClass('dim-font-placeholder');
 
 
@@ -41,14 +41,14 @@ $(function () {
 
         var inputReminder = $(this).siblings('.description').val();
         var hour = $(this).parent().attr('id').split('-')[1];
-        
+
         if (inputReminder !== '') {
-        localStorage.setItem(hour, inputReminder);
-        $('#confirm-save').removeClass('hide');
-        $('#confirm-save').addClass('alert alert-success');
-        $('#confirm-reset').addClass('hide');
-        
-    
+            localStorage.setItem(hour, inputReminder);
+            $('#confirm-save').removeClass('hide');
+            $('#confirm-save').addClass('alert alert-success');
+            $('#confirm-reset').addClass('hide');
+
+
         } else {
             $('#confirm-save').addClass('hide');
             window.alert('You need to enter an event before saving!')
