@@ -2,11 +2,11 @@
 
 ## Description
 
-The challenge is to use starter code HTML, CSS, Javascript, to create an unsophisticated calendar app for a 'busy' user. The intention is to allow the user to save events for each hour of the day, as needed, whereby their events saved would persist after refreshing the page.
+This code uses HTML, CSS, Javascript, and APIs to run a simple calendar app for the average 'busy' user. The app allows user to save events for each hour of the day, as needed, whereby their saved events persist after page refresh.
 
-Through implementing jQuery dynamic modifcation of HTML and CSS, the hour-blocks in the calendar are also color-coded based on the time of day to show whether the hour has passed, is now, or is in the future. This also entails the use of the Day.js API to have the app check the current time against the one stated in either hour-block.
+App uses jQuery to programmatically modify HTML and CSS so the hour-blocks in the calendar are color-coded based on the time of day to show whether the hour has passed, is now, or is in the future. To assist with this, app uses Day.js API to check the current time against the one stated in either hour-block.
 
-The biggest take-aways from finishing this project were: practicing DOM traversal using jQuery/Javascript, getting accustomed to using the Day.js API, some practice with using bootstrap components, honing HTML and CSS developing, and, last but not least, getting more practice with browswer DevTools (e.g., console, application).
+The biggest take-aways from finishing this project were: practicing DOM traversal using jQuery/Javascript, getting accustomed to using the Day.js API, some practice with using bootstrap components, honing HTML and CSS use, and, last but not least, getting more practice with browser DevTools (e.g., console, application).
 
 Great challenge!
 
@@ -38,29 +38,34 @@ THEN the saved events persist
 
 Not needed. Simple app
 
+
+
 ## Installation
 
 None required. Live URL
 
+
+
+
 ## Usage
 
-User can access the app using this url:
+User can access the app using this url below:
 
 
 
-Once on the page, user will see hour blocks for regular business hours as well as the current date and time displayed on the top of the page. 
+On the page, user will see colored hour blocks for regular business hours as well as the current date and time displayed on the top of the page. 
 
 User can begin typing in any hour block. Input placeholder text will show '...current hour' for the hour block that corresponds to the current time.
 
 Once entry is complete, user can click the blue icon to the right of each block to save the entry. When page is refreshed, the saved entry will persist on the page. 
 
-If user tries to click the 'save' icon when no event has been entered, a window alert will appear advising user to enter event before saving.
+If user tries to click the 'save' icon when no event has been entered, a window alert appears advising user to enter event before saving.
 
-If user wishes, they may scroll to the bottom of the page and click the 'reset' button to clear all inputs.
+Based on user needs, user can scroll to the bottom of the page and click the 'reset' button to clear all inputs.
 
-Save and Reset functions both use browser 'local.storage' functionality. This can be checked in the 'application' type of the devtools.
+'Save' and 'Reset' functions both use browser's 'local.storage' property. This can be checked in the 'application' tab of the devtools.
 
-The following animation help demonstrate the application functionality:
+The following animations helps demonstrate the application functionality from the perspective of the user:
 
 Save Event
 ![](./assets/images/save_event.gif)
@@ -71,9 +76,19 @@ Clear Event(s)
 Empty Input Alert
 ![](./assets/images/empty_input_alert.gif)
 
+
+
 ## Credits
+
+N/A
 
 ## License
 
+N/A
+
 ## Features
 
+- Bootstrap utilization adds clean layout and 'save' icon. Adds alert style that responds to save and reset buttons.
+- Javascript/jQuery to incorporate Day.js API that displays current time. Time is checked against HTML references to programmatically color-code the hour blocks, relative to current time.
+- window alert that responds to attempt to click save button with empty input
+- Web browser local storage API to allow event entries to persist on the page.
