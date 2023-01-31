@@ -12,6 +12,8 @@ Great challenge!
 
 See acceptance criteria below for details and specifics.
 
+URL to live page: https://chrisgom113.github.io/busy-person-scheduler/
+
 
 ## Acceptance Criteria
 
@@ -42,7 +44,7 @@ Not needed. Simple app
 
 ## Installation
 
-None required. Live URL
+None required. Live URL: https://chrisgom113.github.io/busy-person-scheduler/
 
 
 
@@ -50,6 +52,8 @@ None required. Live URL
 ## Usage
 
 User can access the app using this url below:
+
+https://chrisgom113.github.io/busy-person-scheduler/
 
 
 
