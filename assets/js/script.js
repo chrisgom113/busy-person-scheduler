@@ -20,14 +20,13 @@ $(function () {
 
             } else if (nowTime == theHour) {
                 $(this).addClass('present');
-                $(this).children(".description").attr('placeholder','Now!');
-                $(this).children('.description').addClass('white-font-placeholder');
+                $(this).children(".description").attr('placeholder','...Current hour');
+                $(this).children('.description').addClass('dim-font-placeholder');
 
 
 
             } else if (nowTime > theHour) {
                 $(this).addClass('past');
-                $(this).children(".description").attr('placeholder','passed...but you can still save events!').css('font-style', 'italic');
 
             }
         })

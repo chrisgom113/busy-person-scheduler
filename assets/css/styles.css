@@ -63,8 +63,11 @@ body {
 
   }
 
-  .white-font-placeholder::-webkit-input-placeholder {
+  .dim-font-placeholder::-webkit-input-placeholder {
         color: #ba6d6d;
+        font-size: small;
+        padding-top: 25px;
+        font-style: italic;
         
     }
   
