@@ -1,4 +1,4 @@
-# Busy Person Tool : A Third-Party API Challenge
+# Busy Person Scheduler : A Third-Party API Challenge
 
 ## Description
 
