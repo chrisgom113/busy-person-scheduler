@@ -1,3 +1,6 @@
+
+/* starter code below. Comments are made on selectors that were significant in the
+programmatic javascrint functioning*/
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -12,10 +15,12 @@ textarea {
   padding: 10px;
 }
 
+/* class selector for text area input */
 .description {
   white-space: pre-wrap;
 }
 
+/* container for each hour block */
 .time-block {
   border-radius: 15px;
 }
@@ -30,6 +35,8 @@ textarea {
   border-top: 1px dashed #000000;
 }
 
+/* selectors that are used to color-code each hour block container 
+using javascript */
 .past {
   background-color: #d3d3d3;
   color: white;
@@ -45,6 +52,7 @@ textarea {
   color: white;
 }
 
+/* save button class used at each end of the hour block containers */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -58,11 +66,13 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
+/* used to programmatically show and hide alerts */
 .hide {
   display: none;
 
 }
 
+/* placeholder class for input element placeholder */
 .dim-font-placeholder::-webkit-input-placeholder {
   color: #ba6d6d;
   font-size: small;
