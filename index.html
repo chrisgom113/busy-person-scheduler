@@ -14,15 +14,18 @@
 </head>
 
 <body>
+  <!-- title and small description -->
   <header class="p-5 mb-4 border-5 border-bottom border-dark text-center">
     <h1 class="display-3">Busy Person Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day.... for those folks who are just so busy!</p>
     <p id="currentDay" class="lead"></p>
+    <!-- dynamically implemented alerts -->
     <p id='confirm-save' class="hide">Event Added to Local Storage! ✅</p>
     <p id='confirm-reset' class="hide">Events Cleared! ✅</p>
   </header>
   <div class="container-lg px-5">
 
+    <!-- hour-block divs -->
     <div id="hour-09" class="row time-block">
       <div class="col-2 col-md-1 hour text-center py-3">9am</div>
       <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -97,6 +100,7 @@
       </button>
     </div>
 
+    <!-- reset button -->
     <div id="reset-container">
       <button id="reset-data" class="btn btn-secondary btn-sm">Reset</button>
     </div>
